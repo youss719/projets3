@@ -1,9 +1,9 @@
 package com.projetS3.login.web;
 
-
-
-
 import java.io.IOException;
+
+
+
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -43,8 +43,7 @@ public class LoginServlet extends HttpServlet {
                 // session.setAttribute("username",username);
                 response.sendRedirect("loginsuccess.jsp");
             } else {
-                HttpSession session = request.getSession();
-                //session.setAttribute("user", username);
+                //HttpSession session = request.getSession();
                 response.sendRedirect("login.jsp");
             }
         } catch (ClassNotFoundException e) {
